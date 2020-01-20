@@ -1,0 +1,28 @@
+body {
+  background-color: #F4B7C4;
+  text-align: center;
+}
+
+div {
+  border: 5px black solid;
+  margin: 200px;
+  padding: 50px;
+  font-family: georgia, serif;
+  background-color: #fff;
+}
+
+button {
+  padding: 20px;
+  font-size: 15px;
+  font-family: tahoma;
+  background-color: #71CE6B;
+  border: none;
+}
+
+div .quotationMarks {
+  font-size: 25px;
+}
+
+div #authorName {
+  font-size: 15px;
+}
