@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+  background-color: #f2e6b1;
+}
+
+div {
+  border: 5px black solid;
+  background-color: #f5eed3;
+  padding: 20px;
+}
+
+#secretMessageSend {
+  padding: 10px;
+  width: 50%;
+  font-size: 15px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #8dcc6e;
+  margin: 10px;
+}
+
+#secretMessageStored {
+  font-family: monospace;
+  font-size: 30px;
+  color: #6e94cc;
+}
