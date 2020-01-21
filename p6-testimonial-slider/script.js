@@ -7,6 +7,8 @@ where the testimonials are hardcoded within objects.
 Disclaimer: I know there are better ways to build this with fewer lines of code.
 This was my hack to get it working. My way of implementation doesn't take into consideration
 if a client has the same name. If they did, then the if statements may break.
+
+In the future, I will do a refactor on this project.
 ***/
 
 //Setting the Lorem Ipsum testimonials
