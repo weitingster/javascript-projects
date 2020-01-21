@@ -1,0 +1,33 @@
+body {
+  text-align:center;
+}
+
+#leftArrow {
+  margin: 10px;
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+#rightArrow {
+  margin: 10px;
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  transform: translate(50%, 50%);
+}
+
+div .inner-box {
+  border: 5px black solid;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display:inline-block;
+}
+
+#clientAvatar {
+  width: 10%;
+  border-radius: 75%;
+  min-width: 25%
+}
