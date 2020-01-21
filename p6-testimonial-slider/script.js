@@ -34,7 +34,8 @@ var testimonial2 = {
 };
 
 //grouping the 3 testimonial objects together
-var groupTestimonial = [testimonial0, testimonial1, testimonial2];
+// did not end up using this array but I know the solution should use it...
+//var groupTestimonial = [testimonial0, testimonial1, testimonial2];
 
 //Grabbing all the HTML elements that will change
 var leftArrow = document.getElementById("leftArrow");
@@ -94,6 +95,20 @@ function rightArrowClick() {
 leftArrow.addEventListener("click", leftArrowClick);
 rightArrow.addEventListener("click", rightArrowClick);
 
-var test = testimonial2.avatar;
 
-console.log(test);
+
+
+/*** After reviewing the code with my partner, the following was shared with me
+for future consideration to modify the above code I wrote. This method eliminates many
+lines of code I wrote;
+
+var curIndex = 0;
+
+function leftArrowClick() {
+  curIndex = ((curIndex - 1) + 3) % 3;
+  clientAvatar.src = groupTestimonial[curIndex].avatar;
+  clientName.innerText = groupTestimonial[curIndex].name;
+  clientStars.innerText = groupTestimonial[curIndex].stars;
+  clientTestimonial.innerText = groupTestimonial[curIndex].testimonial;
+
+  ***/
