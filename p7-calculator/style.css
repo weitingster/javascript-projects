@@ -1,0 +1,52 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #709fba;
+  font-size: 2em;
+  text-shadow: 2px 1px #000;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+.sectionGrid1,
+.sectionGrid2,
+.sectionGrid3,
+.sectionGrid4 {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttonSquare {
+  background-color: #6fa6a4;
+  color: #FFF;
+  text-align: center;
+  padding: 25px;
+  flex-wrap: wrap;
+  width: 10%;
+  margin: 2px;
+  flex-grow: 1;
+  font-size: 1.5em;
+}
+
+.buttonSquare:hover {
+  background-color: #798a89;
+}
+
+.buttonSquare:active {
+  background-color: #505c5b;
+}
+
+#display {
+  padding: 25px;
+  height: 40px;
+  background-color: #c3e8e7;
+}
