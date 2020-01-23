@@ -1,0 +1,26 @@
+body {
+  font-family: arial, san-serif;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+/** PRODUCTS **/
+
+#product-card{
+    border: 1px black solid;
+    margin: 1%;
+    padding: 10px;
+    min-width: 30%;
+    max-width: 30%;
+}
+
+img {
+  width: 100%;
+}
+
+#product-name, #product-price {
+  font-size: 1em;
+}
