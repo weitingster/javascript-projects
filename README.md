@@ -13,4 +13,4 @@ How it's laid out:
 * Skillcrush - Any project files listed with 'Skillcrush' in its title will be exceptions. These are done with www.skillcrush.com and range from the use of html, to css, to javascript, to jquery.
 
 Feel free to reach out if you have more questions! 
-[mailto:weiting@wontosa.com](weiting@wontosa.com)
+weiting@wontosa.com
