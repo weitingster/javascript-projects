@@ -9,7 +9,7 @@ where on page load, it displays white because there isn't a colour chosen yet
 var onClick = document.getElementById("onClick");
 var hexCodeLabel = document.getElementById("hexCodeLabel");
 
-hexCodeLabel.innerText = "#000";
+hexCodeLabel.innerText = "#FFF";
 //Selecting a random colour to display as background colour and change the text label
 function onClickNow() {
   var colorPicker = ["#EC694C", "#ECCF4C", "#C7EC4C", "#4CECB6", "#4CB6EC", "#966BEE", "#E274D5", "#E2748B"];
