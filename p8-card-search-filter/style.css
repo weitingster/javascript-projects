@@ -1,0 +1,64 @@
+body {
+  font-family: arial, san-serif;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.section-filter {
+  font-size: 1.5em;
+  text-align: center;
+  font-family: arial, san-serif;
+}
+
+div .input-search-term {
+  width: 50%;
+  height: 20px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+
+.button-search-term:hover {
+  background-color: #ab164c;
+  color: #fff;
+}
+
+.button-search {
+  border: none;
+  font-size: 0.5em;
+}
+
+.button-search:hover{
+  color: #296e9c;
+}
+
+.button-search-term {
+  border: 2px black solid;
+  padding: 5px;
+  margin: 5px;
+  font-size: 1em;
+}
+
+/** PRODUCTS **/
+.section-grid1, .section-grid2 {
+  display: flex;
+  margin: 10px;
+}
+
+.product-card{
+    border: 1px black solid;
+    margin: 1%;
+    padding: 10px;
+    min-width: 30%;
+}
+
+img {
+  width: 100%;
+}
+
+.product-name, .price-tag {
+  font-size: 1em;
+}
