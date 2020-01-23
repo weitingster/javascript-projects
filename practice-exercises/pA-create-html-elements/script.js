@@ -1,7 +1,7 @@
 /***
 Weiting's 30 days of Vanilla Javascript:
 Project #A: Learn - Create HTML Elements Using Javascript
-where...
+where we're creating a child element inside of a parent element using Javascript
 
 ****** FOR REFERENCE ******
 <div id="bookmarks">                <-- parent element
