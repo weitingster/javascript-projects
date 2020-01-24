@@ -1,5 +1,5 @@
 # vanilla-javascript-projects
-Storing all my vanilla javascript projects and learnings. Aiming for 30 days of Javascript code! 
+Storing all my javascript projects and learnings. Aiming for 30 days of Javascript code! 
 
 My journey started: January 19, 2020.
 
