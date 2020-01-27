@@ -1,0 +1,15 @@
+body {
+  font-family: arial, san-serif;
+}
+
+h1 {
+  background-color: red;
+}
+
+input {
+  font-size: 40px;
+}
+
+span {
+  font-size: 20px;
+}
