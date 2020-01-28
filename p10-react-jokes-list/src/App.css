@@ -1,0 +1,15 @@
+body {
+  font-family: tahoma, san-serif;
+}
+
+.single-joke-item {
+  border: 1px black solid;
+  margin: 50px;
+  padding: 20px;
+  color: #19877b;
+  background-color: #f8ecf9;
+}
+
+.jokes {
+  text-align: center;
+}
