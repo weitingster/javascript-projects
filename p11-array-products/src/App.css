@@ -1,0 +1,24 @@
+.product-card {
+  border: 1px black solid;
+  margin: 2% 2%;
+  padding: 2%;
+  width: 250px;
+  height: 175px;
+  background-color: #f2d8c8;
+}
+
+.product-card:hover {
+  background-color: #ede0c6;
+}
+
+.product-listing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
