@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="88px" viewBox="0 0 90 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <circle id="Oval" fill-opacity="0.6" fill="#5BC0EB" cx="45" cy="22" r="22"></circle>
+            <circle id="Oval-Copy" fill="#FFC1C8" cx="64" cy="62" r="22"></circle>
+            <circle id="Oval-Copy-2" fill="#FFE3B0" cx="27" cy="62" r="22"></circle>
+            <g id="diamond" transform="translate(0.000331, 12.000000)" fill="#000000" fill-rule="nonzero">
+                <path d="M69.729,1.329 C69.35,0.851 68.773,0.574 68.164,0.574 L21.869,0.574 C21.26,0.574 20.685,0.851 20.305,1.327 L0.436,26.247 C-0.183,27.023 -0.139,28.137 0.54,28.861 L43.54,74.793 C43.918,75.196 44.447,75.426 45,75.426 C45.553,75.426 46.082,75.197 46.46,74.793 L89.46,28.861 C90.138,28.136 90.183,27.024 89.565,26.249 L69.729,1.329 Z M23.369,4.574 L41.097,4.574 L23.369,23.673 L23.369,4.574 Z M43.5,25.994 L25.308,25.994 L43.5,6.395 L43.5,25.994 Z M46.5,6.388 L64.75,25.994 L46.5,25.994 L46.5,6.388 Z M43.5,28.994 L43.5,67.112 L24.304,28.994 L43.5,28.994 Z M46.5,28.994 L65.761,28.994 L46.5,67.242 L46.5,28.994 Z M66.701,23.686 L48.911,4.574 L66.726,4.574 L66.701,23.686 Z M20.945,28.994 L38.175,63.209 L6.144,28.994 L20.945,28.994 Z M69.121,28.994 L83.857,28.994 L51.967,63.058 L69.121,28.994 Z M69.698,25.994 L69.722,7.744 L84.249,25.994 L69.698,25.994 Z M20.369,7.664 L20.369,25.994 L5.754,25.994 L20.369,7.664 Z" id="Shape"></path>
+            </g>
+            <g id="Group-2" transform="translate(0.000000, 12.574000)">
+                <path d="M69.7293314,0.755 C69.3503314,0.277 68.7733314,0 68.1643314,0 L21.8693314,0 C21.2603314,0 20.6853314,0.277 20.3053314,0.753 L0.436331401,25.673 C-0.182668599,26.449 -0.138668599,27.563 0.540331401,28.287 L43.5403314,74.219 C43.9183314,74.622 44.4473314,74.852 45.0003314,74.852 C45.5533314,74.852 46.0823314,74.623 46.4603314,74.219 L89.4603314,28.287 C90.1383314,27.562 90.1833314,26.45 89.5653314,25.675 L69.7293314,0.755 Z" id="Shape-path"></path>
+                <polygon id="Shape-path" fill="#FFFFFF" points="23.3693314 4 41.0973314 4 23.3693314 23.099"></polygon>
+                <polygon id="Shape-path" fill="#FFFFFF" points="43.5003314 25.42 25.3083314 25.42 43.5003314 5.821"></polygon>
+                <polygon id="Shape-path" fill="#FFFFFF" points="46.5003314 5.814 64.7503314 25.42 46.5003314 25.42"></polygon>
+                <polygon id="Shape-path" fill="#FFFFFF" points="43.5003314 28.42 43.5003314 66.538 24.3043314 28.42"></polygon>
+                <polygon id="Shape-path" fill="#FFFFFF" points="46.5003314 28.42 65.7613314 28.42 46.5003314 66.668"></polygon>
+                <polygon id="Shape-path" fill="#FFFFFF" points="66.7013314 23.112 48.9113314 4 66.7263314 4"></polygon>
+                <polygon id="Shape-path" fill="#FFFFFF" points="20.9453314 28.42 38.1753314 62.635 6.1443314 28.42"></polygon>
+                <polygon id="Shape-path" fill="#FFFFFF" points="69.1213314 28.42 83.8573314 28.42 51.9673314 62.484"></polygon>
+                <polygon id="Shape-path" fill="#FFFFFF" points="69.6983314 25.42 69.7223314 7.17 84.2493314 25.42"></polygon>
+                <polygon id="Shape-path" fill="#FFFFFF" points="20.3693314 7.09 20.3693314 25.42 5.7543314 25.42"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
