@@ -1,0 +1,19 @@
+body {
+  background-color: #bdd2c8;
+}
+
+h1, h2 {
+  margin: 50px;
+  text-align: center;
+}
+
+button {
+  display: block;
+  padding: 30px;
+  width: 200px;
+  font-size: 30px;
+  width: 100%;
+  border: none;
+  color: #fff;
+  background-color: #62635a;
+}
