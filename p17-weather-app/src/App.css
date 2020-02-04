@@ -42,7 +42,7 @@ button {
   margin: 0% 2% 0% 0%;
   background: url("./assets/background.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .weather-card-right {
@@ -50,8 +50,8 @@ button {
   margin: 2%;
 }
 
-.weather-card-left img{
-  width: 100%;
+.weather-card-left img {
+  height: 100%;
 }
 
 h1, h2 {
