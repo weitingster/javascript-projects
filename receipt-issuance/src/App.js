@@ -9,8 +9,6 @@ import PropertyUnits from './components/PropertyUnits'
 import RentPrice from './components/RentPrice'
 import ReceiptDescription from './components/ReceiptDescription'
 import Signature from './components/Signature'
-import jsPDF from 'jspdf'
-
 
 class App extends React.Component {
   constructor(props) {
@@ -116,9 +114,11 @@ class App extends React.Component {
 
         </div>
 
-        <div className="confirmation-container">
-           <button>Download Receipt Now</button>
-        </div>
+        {
+        // <div className="confirmation-container">
+        //    <button>Download Receipt Now</button>
+        // </div>
+        }
 
       </div>
     );
