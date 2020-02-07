@@ -1,10 +1,16 @@
-import React from "react"
+import React, {Component} from "react"
 
-function TenantNames() {
+class TenantNames extends Component {
+
+  render(props) {
     return(
       <div>
       <h2>Select the tenant who you want to issue the receipt to</h2>
-        <select>
+        <select
+          value={this.TenantNames}
+          onChange={this.props.handleChange}
+          name="tenantNames"
+        >
           <option value="Choose the tenant(s)">Choose the tenant(s)</option>
           <option value="Adrian Martin">Adrian Martin</option>
           <option value="Ashley Carr">Ashley Carr</option>
@@ -17,6 +23,7 @@ function TenantNames() {
         </select>
       </div>
     )
+  }
 }
 
 export default TenantNames
