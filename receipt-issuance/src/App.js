@@ -81,10 +81,10 @@ class App extends React.Component {
 
         <div className="app-container">
           { /* Receipt Inputs */ }
-          <p>Please fill out the form to its entirety.</p>
           <EmailSendTo handler={this.handleChangeEmailTo} />
           <br />
           <EmailSendFrom handler={this.handleChangeEmailFrom}/>
+          <hr />
           <TenantNames handler={this.handleChangeTenantNames} />
           <PropertyUnits handler={this.handleChangePropertyUnits} />
           <RentPrice handler={this.handleChangeRentPrice} />
@@ -93,14 +93,15 @@ class App extends React.Component {
 
         <hr />
         <div className="receipt-instructions">
-          <p>Please confirm below and press submit to initiate the automatic send.</p>
-          <h2>Confirmation of Emails</h2>
+          <h1>Confirm Information</h1>
+          <p>Please confirm and press submit to initiate the automatic send.</p>
           <p>To: {this.state.emailSendTo}</p>
           <p>From: {this.state.emailSendFrom}</p>
         </div>
 
         <div className="receipt-container">
         { /* Receipt Design */}
+         <h2>Payment Receipt</h2>
           <TodayDate />
           <ReceiptNo />
           <p className="receipt-field"><span>Received From:</span> {this.state.tenantNames}</p>

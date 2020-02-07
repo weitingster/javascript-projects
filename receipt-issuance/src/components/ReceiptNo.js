@@ -11,7 +11,7 @@ function ReceiptNo() {
 
     return(
       <div>
-        <h2>Receipt ID: {randomstring}</h2>
+        <h3>Receipt ID: {randomstring}</h3>
       </div>
     )
 }

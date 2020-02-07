@@ -13,6 +13,11 @@ h2 {
   margin-top: 5%;
 }
 
+h3 {
+  font-size: 1em;
+  font-weight: 300;
+}
+
 input {
   font-size: 1em;
   font-weight: 300;
@@ -50,8 +55,7 @@ p {
 }
 
 span {
-  color: #4eaec7;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .app-container {
@@ -76,6 +80,24 @@ span {
 }
 
 .receipt-field {
-  border-bottom: 2px solid #4eaec7;
+  border-bottom: 1px solid #444542;
   margin: 5%;
+}
+
+.receipt-container h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.contact-info p {
+  line-height: 10px;
+}
+
+.signature-card {
+  width: 90%;
+  text-align: right;
+}
+
+.signature-card img {
+  width: 100px;
 }
