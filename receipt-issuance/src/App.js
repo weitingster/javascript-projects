@@ -9,6 +9,7 @@ import PropertyUnits from './components/PropertyUnits'
 import RentPrice from './components/RentPrice'
 import ReceiptDescription from './components/ReceiptDescription'
 import Signature from './components/Signature'
+import jsPDF from 'jspdf'
 
 
 class App extends React.Component {
@@ -78,42 +79,46 @@ class App extends React.Component {
     return (
       <div>
         <h1>Weiting's Tenant Receipt Issuance Form</h1>
+        <div className="entire-app">
+          <div className="container-left">
+            <div className="app-container">
+              { /* Receipt Inputs */ }
+              <EmailSendTo handler={this.handleChangeEmailTo} />
+              <br />
+              <EmailSendFrom handler={this.handleChangeEmailFrom}/>
+              <hr />
+              <TenantNames handler={this.handleChangeTenantNames} />
+              <PropertyUnits handler={this.handleChangePropertyUnits} />
+              <RentPrice handler={this.handleChangeRentPrice} />
+              <ReceiptDescription handler={this.handleChangeReceiptDescription} />
+            </div>
+          </div>
 
-        <div className="app-container">
-          { /* Receipt Inputs */ }
-          <EmailSendTo handler={this.handleChangeEmailTo} />
-          <br />
-          <EmailSendFrom handler={this.handleChangeEmailFrom}/>
-          <hr />
-          <TenantNames handler={this.handleChangeTenantNames} />
-          <PropertyUnits handler={this.handleChangePropertyUnits} />
-          <RentPrice handler={this.handleChangeRentPrice} />
-          <ReceiptDescription handler={this.handleChangeReceiptDescription} />
+            <hr />
+          <div className="container-right">
+            <div className="receipt-instructions">
+              <p>To: {this.state.emailSendTo}</p>
+              <p>From: {this.state.emailSendFrom}</p>
+            </div>
+
+            <div className="receipt-container">
+            { /* Receipt Design */}
+             <h2>Payment Receipt</h2>
+              <TodayDate />
+              <ReceiptNo />
+              <p className="receipt-field"><span>Received From:</span> {this.state.tenantNames}</p>
+              <p className="receipt-field"><span>Property Unit:</span> {this.state.propertyUnits}</p>
+              <p className="receipt-field"><span>Amount in CAD: $</span>{this.state.rentPrice}</p>
+              <p className="receipt-field"><span>Description:</span> {this.state.receiptDescription}</p>
+              <Signature />
+            </div>
+          </div>
+
         </div>
 
-        <hr />
-        <div className="receipt-instructions">
-          <h1>Confirm Information</h1>
-          <p>Please confirm and press submit to initiate the automatic send.</p>
-          <p>To: {this.state.emailSendTo}</p>
-          <p>From: {this.state.emailSendFrom}</p>
+        <div className="confirmation-container">
+           <button>Download Receipt Now</button>
         </div>
-
-        <div className="receipt-container">
-        { /* Receipt Design */}
-         <h2>Payment Receipt</h2>
-          <TodayDate />
-          <ReceiptNo />
-          <p className="receipt-field"><span>Received From:</span> {this.state.tenantNames}</p>
-          <p className="receipt-field"><span>$ CAD:</span> {this.state.rentPrice}</p>
-          <p className="receipt-field"><span>Property Unit:</span> {this.state.propertyUnits}</p>
-          <p className="receipt-field"><span>Description:</span> {this.state.receiptDescription}</p>
-          <Signature />
-        </div>
-
-       <div className="confirmation-container">
-          <button>Issue the Receipt Now</button>
-       </div>
 
       </div>
     );

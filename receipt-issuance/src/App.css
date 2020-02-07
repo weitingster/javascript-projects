@@ -1,6 +1,6 @@
 body {
   font-family: Open Sans, Sans-Serif;
-  margin: 15%;
+  margin: 2% 5%;
 }
 
 h1 {
@@ -33,20 +33,17 @@ select {
   width: 100%;
 }
 
-hr {
-  margin: 50px 0;
-}
-
 button {
   padding: 2% 5%;
   font-size: 1em;
   border-radius: 7px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   margin: 5% 0%;
   border: none;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   background-color: #3daf3b;
   color: #f4f1f6;
+  width: 100%;
 }
 
 p {
@@ -65,12 +62,13 @@ span {
 }
 
 .receipt-instructions {
-  margin: 5% 10%;
+  margin: 0% 5%;
 }
 
 .receipt-container {
   border: 1px solid #dde4e4;
-  padding: 30px;
+  padding: 20px;
+  width: 100%;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
@@ -94,10 +92,18 @@ span {
 }
 
 .signature-card {
-  width: 90%;
   text-align: right;
 }
 
 .signature-card img {
   width: 100px;
+}
+
+.entire-app {
+  display: flex;
+}
+
+.container-left, .container-right {
+  margin: 0% 2%;
+  width: 50%;
 }
