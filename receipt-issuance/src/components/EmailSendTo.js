@@ -1,10 +1,15 @@
-import React from "react"
+import React, {Component} from "react"
 
-function EmailSendTo() {
+class EmailSendTo extends Component {
+  render() {
     return(
       <div>
       <h2>Whose email do you want to send the receipt to?</h2>
-        <select>
+        <select
+          value={this.EmailSendTo}
+          onChange={this.props.handler}
+          name="emailSendTo"
+        >
           <option value="Choose the tenant(s)">Choose the tenant(s) email(s)</option>
           <option value="weitingxus@gmail.com">LANDLORD: Weiting Xu</option>
           <option value="adrian_martin@rogers.com">Adrian Martin</option>
@@ -18,6 +23,8 @@ function EmailSendTo() {
         </select>
       </div>
     )
+  }
 }
+
 
 export default EmailSendTo

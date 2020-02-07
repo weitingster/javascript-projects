@@ -2,13 +2,13 @@ import React, {Component} from "react"
 
 class TenantNames extends Component {
 
-  render(props) {
+  render() {
     return(
       <div>
       <h2>Select the tenant who you want to issue the receipt to</h2>
         <select
           value={this.TenantNames}
-          onChange={this.props.handleChange}
+          onChange={this.props.handler}
           name="tenantNames"
         >
           <option value="Choose the tenant(s)">Choose the tenant(s)</option>

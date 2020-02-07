@@ -12,18 +12,65 @@ import Signature from './components/Signature'
 
 
 class App extends React.Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
-      tenantNames: ""
+      tenantNames: "",
+      propertyUnits: "",
+      rentPrice: "",
+      receiptDescription: "",
+      emailTo: "",
+      emailFrom: ""
     }
-    this.handleChange = this.handleChange.bind(this)
+    this.handleChangeTenantNames = this.handleChangeTenantNames.bind(this)
+    this.handleChangePropertyUnits = this.handleChangePropertyUnits.bind(this)
+    this.handleChangeRentPrice = this.handleChangeRentPrice.bind(this)
+    this.handleChangeReceiptDescription = this.handleChangeReceiptDescription.bind(this)
+    this.handleChangeEmailTo = this.handleChangeEmailTo.bind(this)
+    this.handleChangeEmailFrom = this.handleChangeEmailFrom.bind(this)
   }
 
-  handleChange(event) {
+  handleChangeTenantNames(event) {
     const {name, value} = event.target
     this.setState({
-      [name] : value
+       'tenantNames' : value,
+    })
+  }
+
+
+  handleChangePropertyUnits(event) {
+    const {name, value} = event.target
+    this.setState({
+       'propertyUnits': value
+    })
+  }
+
+
+  handleChangeRentPrice(event) {
+    const {name, value} = event.target
+    this.setState({
+       'rentPrice': value
+    })
+  }
+
+  handleChangeReceiptDescription(event) {
+    const {name, value} = event.target
+    this.setState({
+       'receiptDescription': value
+    })
+  }
+
+  handleChangeEmailTo(event) {
+    const {name, value} = event.target
+    this.setState({
+       'emailSendTo': value
+    })
+  }
+
+  handleChangeEmailFrom(event) {
+    const {name, value} = event.target
+    this.setState({
+       'emailSendFrom': value
     })
   }
 
@@ -35,31 +82,31 @@ class App extends React.Component {
         <div className="app-container">
           { /* Receipt Inputs */ }
           <p>Please fill out the form to its entirety.</p>
-          <EmailSendTo />
+          <EmailSendTo handler={this.handleChangeEmailTo} />
           <br />
-          <EmailSendFrom />
-          <TenantNames />
-          <PropertyUnits />
-          <RentPrice />
-          <ReceiptDescription />
+          <EmailSendFrom handler={this.handleChangeEmailFrom}/>
+          <TenantNames handler={this.handleChangeTenantNames} />
+          <PropertyUnits handler={this.handleChangePropertyUnits} />
+          <RentPrice handler={this.handleChangeRentPrice} />
+          <ReceiptDescription handler={this.handleChangeReceiptDescription} />
         </div>
 
         <hr />
         <div className="receipt-instructions">
           <p>Please confirm below and press submit to initiate the automatic send.</p>
           <h2>Confirmation of Emails</h2>
-          <p>To: EmailTo</p>
-          <p>From: Email From</p>
+          <p>To: {this.state.emailSendTo}</p>
+          <p>From: {this.state.emailSendFrom}</p>
         </div>
 
         <div className="receipt-container">
         { /* Receipt Design */}
           <TodayDate />
           <ReceiptNo />
-          <p className="receipt-field"><span>Received From:</span> {this.state.tenantNames}</p> //attention here Donald
-          <p className="receipt-field"><span>$ CAD:</span> RentPrice</p>
-          <p className="receipt-field"><span>Property Unit:</span> PropertyUnits</p>
-          <p className="receipt-field"><span>Description:</span> ReceiptDescription</p>
+          <p className="receipt-field"><span>Received From:</span> {this.state.tenantNames}</p>
+          <p className="receipt-field"><span>$ CAD:</span> {this.state.rentPrice}</p>
+          <p className="receipt-field"><span>Property Unit:</span> {this.state.propertyUnits}</p>
+          <p className="receipt-field"><span>Description:</span> {this.state.receiptDescription}</p>
           <Signature />
         </div>
 
